@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TC_001_SignUpTest">
+      <class name="tests.TC_006_UiTest">
         <methods>
           <include name="browserLaunchAndUrlLoad"/>
           <include name="closeBrowser"/>
-          <include name="signuptest"/>
-          <include name="setup"/>
+          <include name="verifyAlertStyling"/>
         </methods>
-      </class> <!-- tests.TC_001_SignUpTest -->
+      </class> <!-- tests.TC_006_UiTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

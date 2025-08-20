@@ -1,19 +1,24 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.ProjectSpecificationMethods;
 
 public class LogInPage extends ProjectSpecificationMethods {
-	   
+	WebDriverWait wait;
 
 	    @FindBy(id = "login2")
-	    WebElement loginPage;
+	    public WebElement loginBtn;
 
 	    @FindBy(id = "loginusername")
 	    WebElement usernameField;
@@ -30,10 +35,11 @@ public class LogInPage extends ProjectSpecificationMethods {
 	    public LogInPage(WebDriver driver) {
 	        this.driver = driver;
 	        PageFactory.initElements(driver, this);
+	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 	    }
 
 	    public LogInPage openLoginPage() {
-	        loginPage.click();
+	        loginBtn.click();
 	        return this;
 	    }
 
@@ -42,15 +48,6 @@ public class LogInPage extends ProjectSpecificationMethods {
 	        passwordField.sendKeys(password);
 	        loginButton.click();
 	    }
-	    public String getAlertMessage() {
-	        try {
-	            Alert alert = driver.switchTo().alert();
-	            String message = alert.getText();
-	            alert.accept();
-	            return message;
-	        } catch (NoAlertPresentException e) {
-	            return null;
-	        }}
 	    public String getPasswordFieldType() {
 	        return passwordField.getAttribute("type");
 	    }
@@ -58,5 +55,12 @@ public class LogInPage extends ProjectSpecificationMethods {
 	    public boolean isLoggedIn() {
 	        return loggedInUser.isDisplayed();
 	    }
+	    public String getAlertMessage() {
+			wait.until(ExpectedConditions.alertIsPresent());
+			Alert alert = driver.switchTo().alert();
+			String alertText = alert.getText();
+			alert.accept();
+			return alertText;
+		}
 	}
 

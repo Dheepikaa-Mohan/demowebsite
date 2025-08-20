@@ -17,7 +17,7 @@ public class TC_002_LogInTest extends ProjectSpecificationMethods {
 	 @Test(priority = 1)
 	    public void testLoginValidCredentials(){
 		 
-		LogInPage loginPage=new LogInPage(driver);
+		    LogInPage loginPage=new LogInPage(driver);
 	        loginPage.openLoginPage();
 	        loginPage.login("saimadhi123", "saimadhi123");
 	       
@@ -46,7 +46,7 @@ public class TC_002_LogInTest extends ProjectSpecificationMethods {
 	        Assert.assertTrue(alert.getText().contains("Please fill"), "Empty field alert missing.");
 	        alert.accept();
 	    }
-	 @Test(priority = 3)
+	 @Test(priority = 4)
 	    public void testPasswordFieldIsMasked() {
 		 LogInPage loginPage=new LogInPage(driver);
 		 loginPage.openLoginPage();

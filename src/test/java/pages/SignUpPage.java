@@ -12,23 +12,23 @@ import org.testng.Assert;
 import base.ProjectSpecificationMethods;
 
 public class SignUpPage extends ProjectSpecificationMethods {
-	 @FindBy(id = "signin2")
-	    WebElement signUpPage;
+	    @FindBy(id = "signin2")
+	    public WebElement signUpBtn;
 		@FindBy(xpath="//input[@id=\"sign-username\"]")
-    WebElement usernameField;
+        WebElement usernameField;
 
-    @FindBy(xpath="//input[@id=\"sign-password\"]")
-    WebElement passwordField;
+        @FindBy(xpath="//input[@id=\"sign-password\"]")
+        WebElement passwordField;
 
-    @FindBy(xpath ="//button[text()='Sign up']")
-    WebElement signUpButton;
+        @FindBy(xpath ="//button[text()='Sign up']")
+        WebElement signUpButton;
 
     public SignUpPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this); 
     }
     public SignUpPage openSignUpPage() {
-        signUpPage.click();
+        signUpBtn.click();
         return this;
     }
     public SignUpPage enterCredentials(String username, String password) {
