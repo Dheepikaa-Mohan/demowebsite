@@ -16,14 +16,14 @@ import base.ProjectSpecificationMethods;
 public class ProductPage extends ProjectSpecificationMethods {
 	WebDriverWait wait;
 	@FindBy(xpath="//a[text()='Nokia lumia 1520']")
-	WebElement productLink2;
+	WebElement productLink3;
 	@FindBy(xpath = "//a[text()='Add to cart']")
 	    WebElement addToCartBtn;
     @FindBy(xpath="//a[text()='Samsung galaxy s6']")
     WebElement productLink1;
     @FindBy(xpath="//a[text()='Iphone 6 32gb']")
-    WebElement productLink3;
-    @FindBy(xpath="//a[text()='Sony xperia z5']")
+    WebElement productLink2;
+    @FindBy(xpath="//a[text()='Sony vaio i5']")
     WebElement productLink4;
     @FindBy(linkText = "Phones")
 	WebElement phonesCategories;

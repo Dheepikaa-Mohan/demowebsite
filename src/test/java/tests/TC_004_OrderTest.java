@@ -3,7 +3,10 @@ package tests;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
+
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.ProjectSpecificationMethods;
@@ -14,6 +17,12 @@ import pages.OrderPage;
 import pages.ProductPage;
 
 public class TC_004_OrderTest extends ProjectSpecificationMethods {
+	@BeforeTest
+	public void setup() throws IOException {
+		testName="Order Test";
+		testDescription="Testing the order functionality by giving user details";
+		testAuthor=" Dheepikaa M G ";
+	}
 	
 	@Test
 public void validDetailsTest() throws InterruptedException {
@@ -51,7 +60,7 @@ public void validDetailsTest() throws InterruptedException {
 	    HomePage homepg=new HomePage(driver);
 	    OrderPage orderpg=new OrderPage(driver);
 	 loginPage.openLoginPage();
-	 loginPage.login("abc@123","abc@123"); 
+	 loginPage.login("Dheerendiran","dheeru@12345"); 
 	 Thread.sleep(2000);
 	 homepg.navigateToCart();
 	 cartPage.placeOrderButton.click();

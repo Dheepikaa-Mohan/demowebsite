@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.ProjectSpecificationMethods;
@@ -18,6 +19,12 @@ import pages.OrderPage;
 import pages.ProductPage;
 
 public class TC_005_NavigationTest extends ProjectSpecificationMethods{	
+	@BeforeTest
+	public void setup() {
+		testName="Session Navigation Test";
+		testDescription="This test  verifies user session behavior during navigation between pages. ";
+		testAuthor=" Dheepikaa M G ";
+	}
 @Test
 public void testBrowsing() throws InterruptedException {
 	LogInPage loginPage=new LogInPage(driver);

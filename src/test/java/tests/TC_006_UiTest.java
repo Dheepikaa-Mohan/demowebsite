@@ -3,6 +3,7 @@ package tests;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.ProjectSpecificationMethods;
@@ -12,6 +13,12 @@ import pages.ProductPage;
 import pages.SignUpPage;
 
 public class TC_006_UiTest extends ProjectSpecificationMethods {
+	@BeforeTest
+	public void setup() {
+		testName="UI Test";
+		testDescription="Testing the user interface displays correctly ";
+		testAuthor=" Dheepikaa M G ";
+	}
 @Test(priority = 1)
 public void verifyProductTileAlignment() throws InterruptedException {
 	HomePage homepg=new HomePage(driver);

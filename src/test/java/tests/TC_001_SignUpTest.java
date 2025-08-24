@@ -12,12 +12,18 @@ import pages.HomePage;
 import pages.LogInPage;
 import pages.SignUpPage;
 public class TC_001_SignUpTest extends ProjectSpecificationMethods {
+	@BeforeTest
+	public void setup() throws IOException {
+		testName="SignUp Test";
+		testDescription="Testing the signIn functionality of the application with valid and invalid credentials";
+		testAuthor=" Dheepikaa M G ";
+	}
 	@Test(priority = 1)
     public void testSignUpWithNewUser() {
        SignUpPage signUpPage = new SignUpPage(driver);
 		
         signUpPage.openSignUpPage();
-        signUpPage.enterCredentials("pranitharadhi", "Pranitha@123");
+        signUpPage.enterCredentials("pranitha.d", "Pranitha@123");
         signUpPage.clickSignUp();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.alertIsPresent());

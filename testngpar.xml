@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="Suite">
+<parameter name="url" value="https://www.demoblaze.com/"></parameter>
+ <parameter name="browser" value="Chrome"></parameter>
+  <test thread-count="5" parallel="tests" name="ChromeTest">
+    <classes>
+<class name="tests.TC_007_LogOutTest"/>   
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" parallel="tests" name="EdgeTest">
+  <parameter name="browser" value="Edge"></parameter>
+    <classes>
+    
+    <class name="tests.TC_007_LogOutTest"/>
+    </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->

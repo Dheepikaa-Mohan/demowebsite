@@ -2,6 +2,7 @@ package tests;
 
 import base.ProjectSpecificationMethods;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.CartPage;
 import pages.HomePage;
@@ -9,7 +10,16 @@ import pages.LogInPage;
 import pages.ProductPage;
 import static org.testng.Assert.*;
 
+import java.io.IOException;
+
 public class TC_003_CartTest extends ProjectSpecificationMethods {
+	
+	@BeforeTest
+	public void setup() throws IOException {
+		testName="Cart Test";
+		testDescription="Testing the cart functionality by adding products";
+		testAuthor=" Dheepikaa M G ";
+	}
 
 	@Test()
 	public void testFullCartFlow() throws InterruptedException {
@@ -55,7 +65,7 @@ public class TC_003_CartTest extends ProjectSpecificationMethods {
 		assertTrue(updatedTotal < actualTotal, "Total not updated after deletion.");
 	    
 		homepg.navigateToHome();
-		Thread.sleep(2000);
+		Thread.sleep(2000); 
 		productPage.selectProduct3();
 	    productPage.addToCart();
 	    String alert3 = loginPage.getAlertMessage();

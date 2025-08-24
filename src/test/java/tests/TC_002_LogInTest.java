@@ -1,5 +1,6 @@
 package tests;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
@@ -8,11 +9,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.ProjectSpecificationMethods;
 import pages.LogInPage;
 public class TC_002_LogInTest extends ProjectSpecificationMethods {
+	@BeforeTest
+	public void setup() throws IOException {
+		testName="LogIn Test";
+		testDescription="Testing the LogIn functionality of the application with valid and invalid credentials";
+		testAuthor=" Dheepikaa M G ";
+	}
 
 	 @Test(priority = 1)
 	    public void testLoginValidCredentials(){
