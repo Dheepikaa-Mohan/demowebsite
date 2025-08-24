@@ -15,7 +15,7 @@ import java.io.IOException;
 public class TC_003_CartTest extends ProjectSpecificationMethods {
 	
 	@BeforeTest
-	public void setup() throws IOException {
+	public void setup() {
 		testName="Cart Test";
 		testDescription="Testing the cart functionality by adding products";
 		testAuthor=" Dheepikaa M G ";

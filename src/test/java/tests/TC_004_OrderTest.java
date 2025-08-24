@@ -18,7 +18,7 @@ import pages.ProductPage;
 
 public class TC_004_OrderTest extends ProjectSpecificationMethods {
 	@BeforeTest
-	public void setup() throws IOException {
+	public void setup() {
 		testName="Order Test";
 		testDescription="Testing the order functionality by giving user details";
 		testAuthor=" Dheepikaa M G ";

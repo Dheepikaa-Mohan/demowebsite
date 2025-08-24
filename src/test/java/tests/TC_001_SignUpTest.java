@@ -13,7 +13,7 @@ import pages.LogInPage;
 import pages.SignUpPage;
 public class TC_001_SignUpTest extends ProjectSpecificationMethods {
 	@BeforeTest
-	public void setup() throws IOException {
+	public void setup() {
 		testName="SignUp Test";
 		testDescription="Testing the signIn functionality of the application with valid and invalid credentials";
 		testAuthor=" Dheepikaa M G ";

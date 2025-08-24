@@ -16,7 +16,7 @@ import base.ProjectSpecificationMethods;
 import pages.LogInPage;
 public class TC_002_LogInTest extends ProjectSpecificationMethods {
 	@BeforeTest
-	public void setup() throws IOException {
+	public void setup() {
 		testName="LogIn Test";
 		testDescription="Testing the LogIn functionality of the application with valid and invalid credentials";
 		testAuthor=" Dheepikaa M G ";
