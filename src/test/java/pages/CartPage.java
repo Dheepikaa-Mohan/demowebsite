@@ -42,7 +42,6 @@ public class CartPage extends ProjectSpecificationMethods {
 		}
 		return false;
 	}
-
 	public int getTotalPrice() {
 		try {
 			return Integer.parseInt(totalPrice.getText());

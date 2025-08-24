@@ -23,7 +23,7 @@ public class TC_001_SignUpTest extends ProjectSpecificationMethods {
        SignUpPage signUpPage = new SignUpPage(driver);
 		
         signUpPage.openSignUpPage();
-        signUpPage.enterCredentials("pranitha.d", "Pranitha@123");
+        signUpPage.enterCredentials("pranitha d saranya", "Pranitha@123");
         signUpPage.clickSignUp();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.alertIsPresent());

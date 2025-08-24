@@ -14,7 +14,8 @@
       <class name="tests.TC_003_CartTest"/>
        <class name="tests.TC_004_OrderTest"/>
       <class name="tests.TC_005_NavigationTest"/>
-     <class name="tests.TC_006_UiTest"/>
+     <class name="tests.TC_006_UiTest"/>      
+
 </classes>
   </test> <!-- Test -->
    <test thread-count="5" name="EdgeTest">

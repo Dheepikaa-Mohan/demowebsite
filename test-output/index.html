@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.TC_001_SignUpTest" class="method navigator-link" hash-for-method="testSignUpWithNewUser">testSignUpWithNewUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">15 methods,   15 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -167,6 +153,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TC_001_SignUpTest" class="method navigator-link" hash-for-method="testSignUpWithNewUser">testSignUpWithNewUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.TC_004_OrderTest" class="method navigator-link" hash-for-method="validDetailsTest">validDetailsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -197,26 +188,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.TC_001_SignUpTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSignUpWithNewUser">
-                  </a> <!-- testSignUpWithNewUser -->
-                  <span class="method-name">testSignUpWithNewUser</span>
-                  <div class="stack-trace">java.lang.AssertionError: Unexpected signup success message. expected [Sign up successful.] but found [This user already exist.]
-	at tests.TC_001_SignUpTest.testSignUpWithNewUser(TC_001_SignUpTest.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -302,6 +273,13 @@
                   <a name="testSignUpWithExistingUser">
                   </a> <!-- testSignUpWithExistingUser -->
                   <span class="method-name">testSignUpWithExistingUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpWithNewUser">
+                  </a> <!-- testSignUpWithNewUser -->
+                  <span class="method-name">testSignUpWithNewUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -446,63 +424,63 @@ data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testFullCartFlow')
 data.setCell(0, 2, 'tests.TC_003_CartTest')
-data.setCell(0, 3, 27723);
+data.setCell(0, 3, 27486);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validDetailsTest')
 data.setCell(1, 2, 'tests.TC_004_OrderTest')
-data.setCell(1, 3, 14435);
+data.setCell(1, 3, 14233);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyAlertStyling')
 data.setCell(2, 2, 'tests.TC_006_UiTest')
-data.setCell(2, 3, 8808);
+data.setCell(2, 3, 8797);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testBrowsing')
 data.setCell(3, 2, 'tests.TC_005_NavigationTest')
-data.setCell(3, 3, 8217);
+data.setCell(3, 3, 8298);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testLogOut')
 data.setCell(4, 2, 'tests.TC_007_LogOutTest')
-data.setCell(4, 3, 5805);
+data.setCell(4, 3, 5875);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'emptyFormTest')
 data.setCell(5, 2, 'tests.TC_004_OrderTest')
-data.setCell(5, 3, 5541);
+data.setCell(5, 3, 5618);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testLoginValidCredentials')
 data.setCell(6, 2, 'tests.TC_002_LogInTest')
-data.setCell(6, 3, 2451);
+data.setCell(6, 3, 2467);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testSignUpWithNewUser')
 data.setCell(7, 2, 'tests.TC_001_SignUpTest')
-data.setCell(7, 3, 1483);
+data.setCell(7, 3, 1455);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'testSignUpWithExistingUser')
 data.setCell(8, 2, 'tests.TC_001_SignUpTest')
-data.setCell(8, 3, 1465);
+data.setCell(8, 3, 1424);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'testLoginInvalidPassword')
 data.setCell(9, 2, 'tests.TC_002_LogInTest')
-data.setCell(9, 3, 1356);
+data.setCell(9, 3, 1355);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verifyProductTileAlignment')
 data.setCell(10, 2, 'tests.TC_006_UiTest')
-data.setCell(10, 3, 557);
+data.setCell(10, 3, 572);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyActionButtonsVisibility')
-data.setCell(11, 2, 'tests.TC_006_UiTest')
-data.setCell(11, 3, 417);
+data.setCell(11, 1, 'testSignUpWithEmptyFields')
+data.setCell(11, 2, 'tests.TC_001_SignUpTest')
+data.setCell(11, 3, 389);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testSignUpWithEmptyFields')
-data.setCell(12, 2, 'tests.TC_001_SignUpTest')
-data.setCell(12, 3, 383);
+data.setCell(12, 1, 'verifyActionButtonsVisibility')
+data.setCell(12, 2, 'tests.TC_006_UiTest')
+data.setCell(12, 3, 375);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'testPasswordFieldIsMasked')
 data.setCell(13, 2, 'tests.TC_002_LogInTest')
-data.setCell(13, 3, 357);
+data.setCell(13, 3, 343);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'testLoginEmptyFields')
 data.setCell(14, 2, 'tests.TC_002_LogInTest')
-data.setCell(14, 3, 332);
+data.setCell(14, 3, 323);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -588,281 +566,279 @@ return data;
               <div class="chronological-class-name">tests.TC_001_SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">181 ms</span>
+                <span class="method-start">175 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_002_LogInTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">181 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.TC_004_OrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup</span>
-                <span class="method-start">182 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.TC_006_UiTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup</span>
-                <span class="method-start">182 ms</span>
+                <span class="method-start">176 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_003_CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">182 ms</span>
+                <span class="method-start">176 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC_004_OrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">177 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC_006_UiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">177 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_005_NavigationTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">182 ms</span>
+                <span class="method-start">177 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_001_SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testDetails</span>
-                <span class="method-start">204 ms</span>
+                <span class="method-start">195 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">218 ms</span>
+                <span class="method-start">209 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testSignUpWithNewUser</span>
-                <span class="method-start">4442 ms</span>
+                <span class="method-start">4940 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">6095 ms</span>
+                <span class="method-start">6626 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">6337 ms</span>
+                <span class="method-start">6879 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSignUpWithExistingUser</span>
-                <span class="method-start">8942 ms</span>
+                <span class="method-start">9508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">10568 ms</span>
+                <span class="method-start">11077 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">10804 ms</span>
+                <span class="method-start">11298 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSignUpWithEmptyFields</span>
-                <span class="method-start">13271 ms</span>
+                <span class="method-start">13196 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">13868 ms</span>
+                <span class="method-start">13770 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_002_LogInTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testDetails</span>
-                <span class="method-start">14076 ms</span>
+                <span class="method-start">13997 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">14078 ms</span>
+                <span class="method-start">13997 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginValidCredentials</span>
-                <span class="method-start">16639 ms</span>
+                <span class="method-start">16563 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">19287 ms</span>
+                <span class="method-start">19212 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">19521 ms</span>
+                <span class="method-start">19425 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginInvalidPassword</span>
-                <span class="method-start">21588 ms</span>
+                <span class="method-start">21778 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">23137 ms</span>
+                <span class="method-start">23292 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">23360 ms</span>
+                <span class="method-start">23514 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginEmptyFields</span>
-                <span class="method-start">25971 ms</span>
+                <span class="method-start">25549 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">26516 ms</span>
+                <span class="method-start">26083 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">26766 ms</span>
+                <span class="method-start">26324 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPasswordFieldIsMasked</span>
-                <span class="method-start">29182 ms</span>
+                <span class="method-start">28521 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">29687 ms</span>
+                <span class="method-start">29025 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_003_CartTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">29897 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-class before">
                 <span class="method-name">testDetails</span>
-                <span class="method-start">29897 ms</span>
+                <span class="method-start">29252 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
+                <span class="method-start">29253 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFullCartFlow</span>
-                <span class="method-start">32429 ms</span>
+                <span class="method-start">31410 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">60268 ms</span>
+                <span class="method-start">59029 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_004_OrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testDetails</span>
-                <span class="method-start">60565 ms</span>
+                <span class="method-start">59285 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">60565 ms</span>
+                <span class="method-start">59285 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyFormTest</span>
-                <span class="method-start">64294 ms</span>
+                <span class="method-start">62968 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">70001 ms</span>
+                <span class="method-start">68749 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">70232 ms</span>
+                <span class="method-start">69010 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validDetailsTest</span>
-                <span class="method-start">72754 ms</span>
+                <span class="method-start">71264 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">87332 ms</span>
+                <span class="method-start">85648 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_005_NavigationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">87622 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">87622 ms</span>
+                <span class="method-start">85947 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">85947 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testBrowsing</span>
-                <span class="method-start">91324 ms</span>
+                <span class="method-start">89725 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">99664 ms</span>
+                <span class="method-start">98146 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_006_UiTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">99962 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">99963 ms</span>
+                <span class="method-start">98502 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">98502 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyProductTileAlignment</span>
-                <span class="method-start">103583 ms</span>
+                <span class="method-start">100865 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">104300 ms</span>
+                <span class="method-start">101596 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">104519 ms</span>
+                <span class="method-start">101843 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyActionButtonsVisibility</span>
-                <span class="method-start">107130 ms</span>
+                <span class="method-start">104592 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">107698 ms</span>
+                <span class="method-start">105112 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Chrome, https://www.demoblaze.com/)</span>
-                <span class="method-start">107936 ms</span>
+                <span class="method-start">105323 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAlertStyling</span>
-                <span class="method-start">110503 ms</span>
+                <span class="method-start">107634 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">119492 ms</span>
+                <span class="method-start">116610 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC_007_LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">118392 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">testDetails</span>
-                <span class="method-start">119756 ms</span>
+                <span class="method-start">118392 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">browserLaunchAndUrlLoad(Edge, https://www.demoblaze.com/)</span>
-                <span class="method-start">119756 ms</span>
+                <span class="method-start">118393 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-test before">
-                <span class="method-name">setup</span>
-                <span class="method-start">119756 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testLogOut</span>
-                <span class="method-start">123165 ms</span>
+                <span class="method-start">121686 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">129145 ms</span>
+                <span class="method-start">127737 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">129338 ms</span>
+                <span class="method-start">127928 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

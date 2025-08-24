@@ -14,8 +14,6 @@ public class Listeners extends ProjectSpecificationMethods implements ITestListe
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		
-		test.log(Status.PASS,"Test Passed");
 		String path=null;
 		try {
 		 path=screenShot(result.getMethod().getMethodName());

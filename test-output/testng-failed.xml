@@ -8,17 +8,17 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="tests.TC_001_SignUpTest">
+      <class name="tests.TC_003_CartTest">
         <methods>
           <include name="browserLaunchAndUrlLoad"/>
-          <include name="closeBrowser"/>
           <include name="testDetails"/>
+          <include name="closeBrowser"/>
           <include name="createReport"/>
-          <include name="setup"/>
+          <include name="testFullCartFlow"/>
           <include name="closeReport"/>
-          <include name="testSignUpWithNewUser"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- tests.TC_001_SignUpTest -->
+      </class> <!-- tests.TC_003_CartTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
