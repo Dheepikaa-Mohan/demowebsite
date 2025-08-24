@@ -28,6 +28,8 @@ public class TC_007_LogOutTest extends ProjectSpecificationMethods{
 		
 	    assertTrue(driver.getCurrentUrl().contains("index.html"), "Not redirected to homepage after logout");
         assertTrue(logOutPg.isLoginButtonVisible(), "Login button not visible after logout");
+	
+        
 	}
 	
 	
